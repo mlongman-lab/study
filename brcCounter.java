@@ -1,8 +1,7 @@
-import com.sun.deploy.net.proxy.WDefaultBrowserProxyConfig;
-
 import java.util.Scanner;
 
 public class brcCounter {
+
     public static void main (String[] Args){
 
         Scanner sc = new Scanner(System.in);
@@ -47,7 +46,7 @@ public class brcCounter {
                             System.out.println("false. Check square brackets");
                             break loop;
                         }
-                        if (imputData.charAt(i) = ')') {        //removing couple of bracket
+                        if (imputData.charAt(i) == ')') {        //removing couple of bracket
                             imputData.deleteCharAt(i).deleteCharAt(i - 1);
                             i--;
                             break;
@@ -61,7 +60,7 @@ public class brcCounter {
                             System.out.println("false. Check rounded brackets");
                             break loop;
                         }
-                        if (imputData.charAt(i) = ')') {        //removing couple of bracket
+                        if (imputData.charAt(i) == ')') {        //removing couple of bracket
                             imputData.deleteCharAt(i).deleteCharAt(i - 1);
                             i--;
                             break;
@@ -76,7 +75,7 @@ public class brcCounter {
                             System.out.println("false. Check figure brackets");
                             break loop;
                         }
-                        if (imputData.charAt(i) = ')') {        //removing couple of bracket
+                        if (imputData.charAt(i) == ')') {        //removing couple of bracket
                             imputData.deleteCharAt(i).deleteCharAt(i - 1);
                             i--;
                             break;
@@ -94,7 +93,8 @@ public class brcCounter {
             else   {                             //if lenght is odd we can exit programm and return false
             return false;
             }
-        }
+        return false;
+    }
 
     }
 
