@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class brcCounter {
+public boolean class brcCounter() {
 
     public static void main (String[] Args){
 
@@ -46,8 +46,8 @@ public class brcCounter {
                             System.out.println("false. Check square brackets");
                             break loop;
                         }
-                        if (imputData.charAt(i) == ')') {        //removing couple of bracket
-                            imputData.deleteCharAt(i).deleteCharAt(i - 1);
+                        if (imputData.charAt(i) == last_br_type) {        //removing couple of bracket
+                            imputData.deleteCharAt(i).deleteCharAt(last_ch_index);
                             i--;
                             break;
                         } else {
@@ -60,8 +60,8 @@ public class brcCounter {
                             System.out.println("false. Check rounded brackets");
                             break loop;
                         }
-                        if (imputData.charAt(i) == ')') {        //removing couple of bracket
-                            imputData.deleteCharAt(i).deleteCharAt(i - 1);
+                        if (imputData.charAt(i) == last_br_type) {        //removing couple of bracket
+                            imputData.deleteCharAt(i).deleteCharAt(last_ch_index);
                             i--;
                             break;
                         }
@@ -75,11 +75,12 @@ public class brcCounter {
                             System.out.println("false. Check figure brackets");
                             break loop;
                         }
-                        if (imputData.charAt(i) == ')') {        //removing couple of bracket
-                            imputData.deleteCharAt(i).deleteCharAt(i - 1);
+                        if (imputData.charAt(i) == last_br_type) {        //removing couple of bracket
+                            imputData.deleteCharAt(i).deleteCharAt(last_ch_index);
                             i--;
                             break;
-                        } else {
+                        }
+                        else {
                             System.out.println("false. Check figure brackets"); // if
                             break loop;
                         }
