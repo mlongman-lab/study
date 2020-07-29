@@ -1,2 +1,0 @@
-# study
-my study projects
